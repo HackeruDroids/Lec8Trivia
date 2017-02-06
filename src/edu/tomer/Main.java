@@ -20,22 +20,12 @@ public class Main {
             int userIndex = IO.getInt("Enter your answer:");
             boolean correct = q.check(userIndex);
             if(correct) {
-                System.out.println("Correct");
                 score++;
                 System.out.println("Your score is: " + score);
-            }else {
-                System.out.println("Wrong, the correct answer is "+q.getCorrectAnswer() );
             }
         }
     }
 
-    static void game() {
-        Deck d = new Deck();
-
-        Trivia q = d.nextQuestion();
-
-
-    }
 
     public static ArrayList<Trivia> getQuestions() {
         ArrayList<Trivia> questions = new ArrayList<>();
